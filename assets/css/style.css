@@ -20,6 +20,10 @@ body {
 /* Header */
 header {
     background-color: darkseagreen;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
 }
 h1 {
     font-family: 'Oswald' , sans-serif;
@@ -30,7 +34,7 @@ h1 {
 }
 /* Main Content */
 main {
-    background-color: lavenderblush;
+    background-color: darkgrey;
     /*Make main content take up surplus space*/
     flex: 1 0 auto;
 } 
