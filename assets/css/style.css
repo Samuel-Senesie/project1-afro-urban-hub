@@ -23,4 +23,4 @@ main {
     background-color: lavenderblush;
     /*Make main content take up surplus space*/
     flex: 1 0 auto;
-}
+} 
