@@ -24,6 +24,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
+    box-shadow: 5px 5px 5px 5px;
 }
 h1 {
     font-family: 'Oswald' , sans-serif;
@@ -34,13 +35,13 @@ h1 {
 }
 /* Main Content */
 main {
-    background-color: darkgrey;
+    background-color: rgba(43, 63, 42, 0.588);
     /*Make main content take up surplus space*/
     flex: 1 0 auto;
 } 
 /* Footer */
 footer {
-    background-color: red;
+    background-color: rgba(8, 43, 29, 0.7);
     padding-top: 10px;
 }
 .container {
@@ -119,7 +120,7 @@ a:hover {
     background: lightseagreen;
     text-align: center;
     padding: 10px 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .bottom-bar p {
     color: white;
