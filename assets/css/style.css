@@ -42,12 +42,6 @@ h1 {
     border-radius: 50%;
     display: flex;
 }
-/* Main Content */
-main {
-    background-color: rgba(43, 63, 42, 0.588);
-    /*Make main content take up surplus space*/
-    flex: 1 0 auto;
-} 
 
 #menu > li {
     margin-bottom: 1em;
@@ -56,6 +50,25 @@ main {
 .active {
     border-bottom: 1px solid;
 }
+
+/* Navbar styles with dropdown toggle */
+nav{
+    position: absolute;
+    background-color: darkseagreen;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 5px 5px #3a3a3a;
+    display: none;
+
+}
+
+/* Main Content */
+main {
+    background-color: rgba(43, 63, 42, 0.588);
+    /*Make main content take up surplus space*/
+    flex: 1 0 auto;
+} 
 
 /* Footer */
 footer {
