@@ -14,12 +14,34 @@ body {
     flex-direction: column;
     /* General project styles */
     color: #3a3a3a;
-    font-family: sans-serif;
+    font-family: 'Lato' , sans-serif;
 }
 
 /* Header */
 
+header {
+    padding: 0;
+    width: 100%;
+}
+
 /* Top bar */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.left > div +div{
+    margin-left: 40px;
+    align-items: flex-end;
+}
+
+.right > div{
+    margin-left: 40px;
+    align-items: end;
+}
+
 a, a:hover{
     text-decoration: none;
 }
@@ -29,12 +51,11 @@ a, a:hover{
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    background: rgba(8, 43, 29, 0.9);
-    position: absolute;
+    background: rgba(8, 43, 29, 0.7);
     width: 100%;
-    padding: 10px;
-    margin: auto;
-    z-index: 99;
+    margin: 0;
+    cursor: pointer;
+    height: 30px;
 }
 .top-bar span{
     color: #fff;
@@ -50,28 +71,47 @@ a, a:hover{
 .top-bar a{
     color: #fff;
 }
-
-header {
+.second-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     background-color: darkseagreen;
-    padding: 3rem 1rem;
+    align-items: baseline;
+}
+
+/*header {
+    background-color: darkseagreen;
+    padding: 2rem 1rem;
     position: fixed;
     z-index: 98;
     width: 100%;
-    box-shadow: 0px 5px 5px #3a3a3a;
+    box-shadow: 0px 3px 3px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+} */
+header a {
+    text-decoration: none;
+    color: white;
 }
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
 }
+#menu > li {
+    margin-bottom: 1rem;
+}
+
+.active {
+    border-bottom: 1px solid;
+}
 
 h1 {
     font-family: 'Oswald' , sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+
 }
 .logo {
     border-radius: 50%;
@@ -89,14 +129,6 @@ h1 {
 /*.logo a:hover {
     color: #f18930;
 } */
-
-#menu > li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid;
-}
 
 /* Navbar styles with dropdown toggle */
 nav{
@@ -122,7 +154,7 @@ nav{
 
 /* Main Content */
 main {
-    background-color: rgba(43, 63, 42, 0.588);
+    background-color: rgba(223, 229, 237, 0.588);
     /*Make main content take up surplus space*/
     flex: 1 0 auto;
     margin-top: 67px;
@@ -235,5 +267,14 @@ a:hover {
     }
     .nav-toggle-label {
         display: none;
+    }
+    .logo {
+        font-size: 110%;
+        line-height: 65px;
+        margin: 0 0.5rem;
+    }
+    /* Main content */
+    main {
+        margin-top: 265px;
     }
 }
