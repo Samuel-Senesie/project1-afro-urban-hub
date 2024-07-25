@@ -7,6 +7,9 @@
     margin: 0; 
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* General body styles */
 body {
     min-height: 100vh;
@@ -237,6 +240,21 @@ a:hover {
 .social-icons i:hover {
     color: #f18930;
 }
+.back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #095403;
+    bottom: 10px;
+    right: 20px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+}
+
 .bottom-bar {
     background: lightseagreen;
     text-align: center;
