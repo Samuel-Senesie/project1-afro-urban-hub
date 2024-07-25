@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Oswald:wght@200..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 /* Apply Asterisk wildcard selector to overide defult styles added by the browser */
-* {
+*{
     padding: 0;
     margin: 0; 
     box-sizing: border-box;
@@ -18,18 +18,50 @@ body {
 }
 
 /* Header */
+
+/* Top bar */
+a, a:hover{
+    text-decoration: none;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: rgba(8, 43, 29, 0.9);
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    z-index: 99;
+}
+.top-bar span{
+    color: #fff;
+    width: 100%;
+}
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+.top-bar li{
+    margin: 0px 5px;
+}
+.top-bar a{
+    color: #fff;
+}
+
 header {
     background-color: darkseagreen;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     width: 100%;
     box-shadow: 0px 5px 5px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-} 
-
+}
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
@@ -39,7 +71,7 @@ header {
 h1 {
     font-family: 'Oswald' , sans-serif;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 .logo {
     border-radius: 50%;
@@ -93,7 +125,7 @@ main {
     background-color: rgba(43, 63, 42, 0.588);
     /*Make main content take up surplus space*/
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 67px;
 } 
 
 /* Footer */
