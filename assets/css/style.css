@@ -24,8 +24,15 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow: 0px 5px 5px #3a3a3a;
 }
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
 h1 {
     font-family: 'Oswald' , sans-serif;
     text-transform: uppercase;
@@ -41,6 +48,15 @@ main {
     /*Make main content take up surplus space*/
     flex: 1 0 auto;
 } 
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid;
+}
+
 /* Footer */
 footer {
     background-color: rgba(8, 43, 29, 0.7);
