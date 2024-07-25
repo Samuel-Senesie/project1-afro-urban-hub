@@ -53,7 +53,7 @@ a, a:hover{
 
 header {
     background-color: darkseagreen;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     position: fixed;
     z-index: 98;
     width: 100%;
@@ -78,7 +78,7 @@ h1 {
     display: flex;
     flex: 1;
     align-items: center;
-    width: 50px;
+    width: 70px;
     margin-right: 10px;
     margin-left: 1px;
 }
@@ -216,4 +216,24 @@ a:hover {
     margin: 0;
     font-size: 16px;
     padding: 7px;
+}
+/* Media query  for tablets and larger screens (>= 768ox) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu {
+        display: flex;
+    }
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
 }
