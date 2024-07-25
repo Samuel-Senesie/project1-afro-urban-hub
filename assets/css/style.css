@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
+} 
 
 #menu {
     font-size: 110%;
@@ -44,7 +44,19 @@ h1 {
 .logo {
     border-radius: 50%;
     display: flex;
+    flex: 1;
+    align-items: center;
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 1px;
 }
+.logo a {
+    display: flex;
+    align-items: center;
+}
+/*.logo a:hover {
+    color: #f18930;
+} */
 
 #menu > li {
     margin-bottom: 1em;
@@ -81,6 +93,7 @@ main {
     background-color: rgba(43, 63, 42, 0.588);
     /*Make main content take up surplus space*/
     flex: 1 0 auto;
+    margin-top: 47px;
 } 
 
 /* Footer */
